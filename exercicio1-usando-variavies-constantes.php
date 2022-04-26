@@ -11,7 +11,7 @@
     <hr>
 
     <?php
-    $data =26/04/2022;
+    $data ="26/04/2022";
     $nome = "Jessica"; 
     $idade = 26;
     $cidade = "São Paulo";
@@ -21,7 +21,7 @@
     echo "<p><b>$idade<b/></p>";
     echo "<p>$cidade</p>";
 
-    <?>
+    ?>
 
     <p>
     
