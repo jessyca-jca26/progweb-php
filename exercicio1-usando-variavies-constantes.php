@@ -19,7 +19,7 @@
     echo "<p>$data</p>";
     echo "<div>$nome</div>";
     echo "<p><b>$idade<b/></p>";
-    echo "<p>"$cidade"</p>";
+    echo "<p>$cidade</p>";
 
     <?>
 
