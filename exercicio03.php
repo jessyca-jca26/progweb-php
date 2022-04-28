@@ -12,19 +12,32 @@
     <hr>
 
     <?php
-
-    $salario = 1000;
-
+        $salario = 50000;//Entrada (qualque valor)
+        echo "<p> salario antigo: R$$salario</p>" 
     
-
-    
-    
-    
-
-
-
-
     ?>
+    <?php
+
+    if ($salario < 500) {
+        $salarioNovo = $salario *1.15;
+    } elseif ($salario <= 1000) {
+        $salarioNovo = $salario * 1.10;
+    } else{
+        $salarioNovo = $salario * 1.05;
+    }
+
+    echo "<p> salario atualizado: R$$salarioNovo</p>";
+    ?>
+<!-- number_format(
+    valor,
+    quantidade de casas decimal",
+    "separador de milhar"
+)
+-->
+
+    <p> <?= number_format($salario,2,",",".")?>
+    e <?=number_format($salarioNovo, 2,",", ".")?>
+    </p>
 
 
 
