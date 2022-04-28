@@ -14,7 +14,7 @@
     <h2>Array com indice numérico</h2>
 
 <?php
-    // Sintaxe com colchetes
+    // Sintaxe com colchete
     $alunos = ["Maria", "João", "Mônica"];
 
     // Sintaxe usando Função array ()
