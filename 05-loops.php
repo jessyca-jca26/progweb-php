@@ -51,31 +51,56 @@ for( $i= 1; $i <=3; $i++){
 }
 ?>
 
-    <h2>Exercicio Array e Loop</h2>
-
 
 <?php
-$meses = ["Janeiro", "feveiro", "Março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+
+$meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
 
 ?>
- <h3>Acessando</h3>
-    <ul>
-        <li> <?=$ano[0]?> </li>
-        <li> <?=$ano[2]?></li>
-        <li> <?=$ano[3]?></li>
-        <li> <?=$ano[4]?></li>
-        <li> <?=$ano[5]?></li>
-        <li> <?=$ano[6]?></li>
-        <li> <?=$ano[7]?></li>
-        <li> <?=$ano[8]?></li>
-        <li> <?=$ano[9]?></li>
-        <li> <?=$ano[10]?></li>
-        <li> <?=$ano[11]?></li>
-        <li> <?=$ano[12]?></li>
-        
-        
+<ol>
+    <?php for($i = 0; $i <count($meses); $i++) {?>
+        <!--ITENS LISTA DEPENDEM DO PHP FOR -->
+    
+        <li> <?=$meses[$i]?> </li>
+        <?php } ?>
+</ol>
 
-    </ul>
+
+<h2>Foreach (para cada)</h2>
+<p>Loop exclusivo para Arrays</p>
+
+<ol>
+    <?php foreach($meses as $mes){ ?>
+        <li><?=$mes?></li>
+        <?php } ?>
+    
+</ol>
+
+<?php
+// Array associativa (formados por paredes de chave=>valor)
+$curso= [
+    // chave (key) => valor (value)
+    "nome" => "Programador Web",
+    "carga_horaria" =>240,
+    "unidade" => "Penha",
+    "ucs" => 5
+];
+
+foreach($curso as $dados => $valor ){
+?>
+
+<p> <?=$dados?> - <?=$valor?></p>
+
+<?php
+   }
+
+
+?>
+
+
+  
+
+
 
 
 
