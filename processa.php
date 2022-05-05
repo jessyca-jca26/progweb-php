@@ -13,6 +13,13 @@
 
 
 <?php
+if(empty($_POST["nome"])|| empty($_POST["email"]) ){
+?>
+    <p style="color: red;"> Por favor preencha nome e e-mail </p>
+    <p><a href="08-formulario.html">Voltar</a></p>
+<?php
+} else {
+
 
 /*echo "<prev>";
 var_dump($_POST);
@@ -56,6 +63,7 @@ $mensagem  = $_POST ["mensagem"];
     <li>Mensagem:<?=$mensagem?></li>
 </ul>
 
+<?php } // fim do Else ?>
 
 </body>
 </html>
