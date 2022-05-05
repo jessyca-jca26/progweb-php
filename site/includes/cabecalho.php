@@ -1,7 +1,9 @@
 <?php
+/* $_SERVER ['PHP SELF'] -> Traz os dados completos do endereço basename ($_SERVER['PHP_SELF']) -> Traz os dados completos do endereço basename ($_SERVER ['PHP _SELF']) -> extrai apenas o nome da extensão*/
 $pagina = basename($_SERVER['PHP_SELF']);
 //echo $pagina;
 
+/* Parte 2 : Condicional para avaliar qual página está aberto e definir qual titulo usar.*/
 switch($pagina){
     case 'index.php': $titulo = "Pagina Inicial"; break;
     case 'produtos.php': $titulo = "Produtos"; break;
@@ -19,6 +21,7 @@ switch($pagina){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Parte3 : colocar a variavel no titulo -->
     <title><?=$titulo?> - Site ABC</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
